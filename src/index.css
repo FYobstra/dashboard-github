@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: 'Public Sans', sans-serif;
+}
+
+.apexcharts-legend-text {
+  color: white !important
+}
