@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Navbar, Statistics, User, ChartRepos } from "../Component";
+import { Navbar, Statistics, User, ChartRepos, Footer } from "../Component";
 import { fetchUser, fetchFollowers, fetchRepos, fetchLimits } from "../Services/services";
 import { useAuth0 } from "@auth0/auth0-react";
 import { ToastContainer, toast } from 'react-toastify';
@@ -35,6 +35,7 @@ function App() {
       <Statistics dataUser={dataUser} />
       <User dataUser={dataUser} dataFollowers={dataFollowers} />
       <ChartRepos dataRepos={dataRepos} />
+      <Footer />
     </div>
   );
 }
